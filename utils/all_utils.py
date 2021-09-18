@@ -17,6 +17,16 @@ def save_model(model, filename):
 # Prepare data function
 
 def prepare_data(df):
+  """It is used to separate the dependent and independent features
+
+  Args:
+      df (pd.DataFrame): It's the pandas datafrmae
+
+  Returns:
+      tuple: It return the tuples of dependent and independent variable
+  """
+
+  
   X = df.drop("y", axis=1)
 
   y = df["y"]
