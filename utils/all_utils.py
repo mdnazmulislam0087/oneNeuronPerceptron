@@ -9,11 +9,11 @@ plt.style.use("fivethirtyeight")
 
 # Save model function
 def save_model(model, filename):
-  """It is used to save the model
+  """It is used to save the trained model
 
   Args:
-      model ([model name ]): Name of the model
-      filename ([string]): Name of the model as file, and.model/or.model
+      model (python object): trained model to
+      filename (string): Path to save the trained model
   """
 
 
@@ -46,9 +46,9 @@ def save_plot(df, file_name, model):
   """It is used to create to save plot for models..
 
   Args:
-      df ([pd.DataFrame]): Input is pandas dataframe
-      file_name ([type]): File name of the plot (and,or,xor e.t.c for example and.png)
-      model ([type]): Name of the model for example and/or/xor e.t.c
+      df (pd.DataFrame): Input is pandas dataframe
+      file_name (string): File name of the plot (and,or,xor e.t.c for example and.png)
+      model (python object): Name of the model for example and/or/xor e.t.c
   """
   def _create_base_plot(df):
     df.plot(kind="scatter", x="x1", y="x2", c="y", s=100, cmap="winter")
