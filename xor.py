@@ -1,7 +1,7 @@
-    """
-    Author: Nazmul
-    email: nazmul.bangladesh06@gmail.com
-    """
+"""
+Author: Nazmul
+email: nazmul.bangladesh06@gmail.com
+"""
 
 
 from utils.model import Perceptron
