@@ -1,6 +1,8 @@
 # oneNeuronPerceptron
 oneNeuron|Perceptron
 
+Thanks
+
 # Command
 ```bash
 git clone https://github.com/mdnazmulislam0087/oneNeuronPerceptron.git
