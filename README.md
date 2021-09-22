@@ -1,5 +1,8 @@
 # oneNeuronPerceptron
 oneNeuron|Perceptron
 
-Read me one line added again
+# Command to add changes in Git
 
+```bash
+git add . && git commit -m "comment of work done" && git push origin main
+```
