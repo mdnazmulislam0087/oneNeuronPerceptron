@@ -9,6 +9,14 @@ plt.style.use("fivethirtyeight")
 
 # Save model function
 def save_model(model, filename):
+  """It is used to save the model
+
+  Args:
+      model ([model name ]): Name of the model
+      filename ([string]): Name of the model as file, and.model/or.model
+  """
+
+
   model_dir = "models"
   os.makedirs(model_dir, exist_ok=True) # ONLY CREATE IF MODEL_DIR DOESN"T EXISTS
   filePath = os.path.join(model_dir, filename) # model/filename
@@ -20,10 +28,10 @@ def prepare_data(df):
   """It is used to separate the dependent and independent features
 
   Args:
-      df (pd.DataFrame): It's the pandas datafrmae
+      df (pd.DataFrame): It's the pandas dataframe
 
   Returns:
-      tuple: It return the tuples of dependent and independent variable
+      tuple: It return the tuples of dependent and independent variable(X,y)
   """
 
   
@@ -35,6 +43,13 @@ def prepare_data(df):
 
 
 def save_plot(df, file_name, model):
+  """It is used to create to save plot for models..
+
+  Args:
+      df ([pd.DataFrame]): Input is pandas dataframe
+      file_name ([type]): File name of the plot (and,or,xor e.t.c for example and.png)
+      model ([type]): Name of the model for example and/or/xor e.t.c
+  """
   def _create_base_plot(df):
     df.plot(kind="scatter", x="x1", y="x2", c="y", s=100, cmap="winter")
     plt.axhline(y=0, color="black", linestyle="--", linewidth=1)
