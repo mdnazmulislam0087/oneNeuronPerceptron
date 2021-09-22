@@ -1,6 +1,14 @@
 # oneNeuronPerceptron
 oneNeuron|Perceptron
 
+# Command
+```bash
+git clone https://github.com/mdnazmulislam0087/oneNeuronPerceptron.git
+
+```
+
+
+
 # Command to add changes in Git
 
 ```bash
