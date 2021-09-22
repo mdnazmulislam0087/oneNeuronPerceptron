@@ -9,6 +9,8 @@ import pandas as pd
 import numpy as np
 import logging
 
+logging_str= "[%(asctime)s:%(levelname)s:%(module)s:%(message)s]"
+logging.basicConfig(level=logging.INFO, format=logging_str)
 
 
 def main(data,eta,epochs,fileName,plotName):
@@ -16,7 +18,7 @@ def main(data,eta,epochs,fileName,plotName):
 
     df = pd.DataFrame(data)
 
-    print(df)
+    logging.info(f"This is actual dataframe{df}")
 
     X,y = prepare_data(df)
 
